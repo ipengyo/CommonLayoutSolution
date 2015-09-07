@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="UTF-8">
+	<title>居中布局-水平布局-2</title>
+	<style type="text/css">
+		
+		/*样式*/
+		.layout-parent{
+			width: 1000px;
+			height: 150px;
+			background-color: #B46060;
+		}
+		.child{
+			width: 150px;
+			height: 150px;
+			background-color: #D36A6A;
+		}
+		
+		/*水平布局-解决方案-2:  
+			absolute + transform
+		*/
+		.layout-parent{
+			position: relative;		
+		}
+		.child{
+			position: absolute;
+			left: 50%;
+			transform:translateX(-50%);
+		}
+
+/*		优点
+		绝对定位脱离文档流，不会对后续元素的布局造成影响。
+		
+		缺点：
+		transform 为 CSS3 属性，有兼容性问题*/
+
+	</style>
+</head>
+<body>
+	<div class="layout-parent">
+		<div class="child">Demo</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>水平垂直居中</title>
+	<style type="text/css">
+		/*样式*/
+		.layout-parent,.right,.left{
+			height: 600px;
+		}
+		.layout-parent{
+			width: 1000px;
+			background-color: #B46060;
+		}
+		.left{
+			width: 150px;
+			background-color: #D36A6A;
+		}
+		.right{
+			background-color: #D36A6A;
+		}
+		
+		
+		.layout-parent{
+			
+		}
+		.left{
+			float: left;
+			background-color: #C15656;
+			
+		}
+		.right{
+			overflow: hidden;
+		}
+	
+	/* 	NOTE：设置 overflow: hidden 会触发 BFC 模式（Block Formatting Context）块级格式化文本。 BFC 中的内容与外界的元素是隔离的。 */
+		
+
+	</style>
+</head>
+<body>
+	<div class="layout-parent">
+		<div class="left">left</div>
+		<div class="right">
+			
+				dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd ss
+		
+		</div>
+
+	</div>
+</body>
+</html>

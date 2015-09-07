@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>水平垂直居中</title>
+	<style type="text/css">
+		/*样式*/
+		.layout-parent{
+			width: 1100px;
+			height: 600px;
+			background-color: #B46060;
+		}
+		.child{
+			width: 150px;
+			height: 150px;
+			background-color: #D36A6A;
+		}
+		
+		
+		.layout-parent{
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+		.child{
+			text-align: left;
+			display: inline-block;
+		}
+	
+
+		
+
+	</style>
+</head>
+<body>
+	<div class="layout-parent">
+		<div class="child">Demo</div>
+	</div>
+</body>
+</html>

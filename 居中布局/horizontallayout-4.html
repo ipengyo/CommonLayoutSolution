@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="UTF-8">
+	<title>居中布局-水平布局-2</title>
+	<style type="text/css">
+		
+		/*样式*/
+		.layout-parent{
+			width: 1000px;
+			height: 150px;
+			background-color: #B46060;
+		}
+		.child{
+			width: 150px;
+			height: 150px;
+			background-color: #D36A6A;
+		}
+
+		.layout-parent{
+			display:flex;
+			justify-content:center;	
+		}
+		.child{
+			
+		}
+		
+
+		 /* 或者下面的方法，可以达到一样的效果 */
+/*		.parent {
+		display: flex;
+		}
+		.child {
+		margin: 0 auto;
+		}*/
+		/*优点
+
+		只需设置父节点属性，无需设置子元素
+		缺点
+
+		有兼容性问题*/
+	</style>
+</head>
+<body>
+	<div class="layout-parent">
+		<div class="child">Demo</div>
+	</div>
+</body>
+</html>

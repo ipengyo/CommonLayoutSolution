@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="UTF-8">
+	<title>居中布局-水平布局-2</title>
+	<style type="text/css">
+		
+		/*样式*/
+		.layout-parent{
+			width: 1000px;
+			height: 150px;
+			background-color: #B46060;
+		}
+		.child{
+			width: 150px;
+			height: 150px;
+			background-color: #D36A6A;
+		}
+		
+		/*水平布局-解决方案-1 display:table + margin */
+		.child{
+			display: table;
+			margin:0px auto;
+		}
+		
+
+		/*如果想兼容IE 6 7
+		就把结构换成table的*/
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="layout-parent">
+		<div class="child">DEMO</div>
+	</div>
+</body>
+</html>

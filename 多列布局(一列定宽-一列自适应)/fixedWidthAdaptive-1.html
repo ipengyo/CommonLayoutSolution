@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>水平垂直居中</title>
+	<style type="text/css">
+		/*样式*/
+		.layout-parent,.right,.left{
+			height: 600px;
+		}
+		.layout-parent{
+			width: 1000px;
+			background-color: #B46060;
+		}
+		.left{
+			width: 150px;
+			background-color: #D36A6A;
+		}
+		.right{
+			background-color: #D36A6A;
+		}
+		
+		
+		.layout-parent{
+			
+		}
+		.left{
+			float: left;
+		}
+		.right{
+			float: left;
+			margin-left:10px;
+		}
+	
+	/* 	NOTE：IE 6 中会有3像素的 BUG，解决方法可以在 .left 加入 margin-left:-3px。 */
+		
+
+	</style>
+</head>
+<body>
+	<div class="layout-parent">
+		<div class="left">left</div>
+		<div class="right">right</div>
+
+	</div>
+</body>
+</html>

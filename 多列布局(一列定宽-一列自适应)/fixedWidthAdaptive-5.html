@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>水平垂直居中</title>
+	<style type="text/css">
+		/*样式*/
+		.layout-parent,.right,.left{
+			height: 600px;
+		}
+		.layout-parent{
+			width: 1000px;
+			background-color: #B46060;
+		}
+		.left{
+			width: 150px;
+			background-color: #D36A6A;
+		}
+		.right{
+			background-color: #D36A6A;
+		}
+		
+		
+		.layout-parent{
+			display: flex;
+		}
+		.left{
+			
+		}
+		.right{
+			flex:1;
+			/*flex: 1 1 0;*/
+		}
+	
+	/* 	NOTE：NOTE：flex-item 默认为内容宽度。
+
+		缺点
+
+		低版本浏览器兼容问题
+		性能问题，只适合小范围布局。 */
+		
+
+	</style>
+</head>
+<body>
+	<div class="layout-parent">
+		<div class="left">left</div>
+		<div class="right">
+			
+				dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd ss
+		
+		</div>
+
+	</div>
+</body>
+</html>

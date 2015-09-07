@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>水平垂直居中</title>
+	<style type="text/css">
+		/*样式*/
+		.layout-parent,.right,.left{
+			height: 600px;
+		}
+		.layout-parent{
+			width: 1000px;
+			background-color: #B46060;
+		}
+		.left{
+			width: 150px;
+			background-color: #D36A6A;
+		}
+		.right{
+			background-color: #D36A6A;
+		}
+		
+		
+		.layout-parent{
+			display: table;
+			table-layout: fixed;
+		}
+		.left{
+			display: table-cell;
+		}
+		.right{
+			display:table-cell;
+		}
+	
+	/* 	NOTE：table 的显示特性为每列的单元格宽度合一定等与表格宽度。 table-layout: fixed; 可加速渲染，也是设定布局优先。
+
+	NOTE：table-cell 中不可以设置 margin 但是可以通过 padding 来设置间距。 */
+		
+
+	</style>
+</head>
+<body>
+	<div class="layout-parent">
+		<div class="left">left</div>
+		<div class="right">
+			
+				dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd ss
+		
+		</div>
+
+	</div>
+</body>
+</html>

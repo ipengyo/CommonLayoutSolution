@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>水平垂直居中</title>
+	<style type="text/css">
+		/*样式*/
+		.layout-parent,.right,.left{
+			height: 600px;
+		}
+		.layout-parent{
+			width: 1000px;
+			background-color: #B46060;
+		}
+		.left{
+			width: 150px;
+			background-color: #D36A6A;
+		}
+		.right{
+			background-color: #D36A6A;
+		}
+		
+		
+		.layout-parent{
+			
+		}
+		.left{
+			float: left;
+			background-color: #C15656;
+
+		}
+		.right{
+			margin-left:150px;
+		}
+		.right-fix{
+			float: right;
+			width: 100%;
+			margin-left: -150px;
+			background-color: #B55E5E;
+		}
+	
+	/* 	NOTE：此方法不会存在 IE 6 中3像素的 BUG，但 .left 不可选择， 需要设置 .left {position: relative} 来提高层级。 此方法可以适用于多版本浏览器（包括 IE6）。缺点是多余的 HTML 文本结构。 */
+		
+
+	</style>
+</head>
+<body>
+	<div class="layout-parent">
+		<div class="left">left</div>
+		<div class="right">
+			<div class="right-fix">
+				dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd dsfasd ss
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
