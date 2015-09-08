@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全屏布局</title>
+	<style type="text/css">
+		html,body,.layout-fullScreen{
+			margin:0px;
+			overflow:hidden;
+			height:100%;
+		}
+		.layout-fullScreen{
+			display:flex;
+			flex-direction:column;
+		}
+		.layout-top{
+			
+			height:100px;
+			background:#FC7F7F;
+		}
+		.layout-bottom{
+			
+			height:50px;
+			background-color:#A7A1A1;
+		}
+		.layout-center{
+			flex:1;
+			display:flex;
+		}
+		.layout-left{
+
+			width:150px;
+			background-color:#DE86FF;
+		}
+		.layout-right{
+			flex:1;
+			overflow:auto;
+			background-color:#905D5D;
+		}
+		.layout-right .layout-right-wrap{
+			min-height:1000px;
+		}
+
+	
+
+		/*NOTE:例如管理系统，监控与统计平台均广泛的使用全屏布局。
+		Flex 兼容性
+
+CSS3 中的新概念所有 IE9 及其也行版本都不兼容。*/
+
+	</style>
+</head>
+<body>
+	<div class="layout-fullScreen">
+		<div class="layout-top">
+			TOP
+		</div>
+		<div class="layout-center">
+			<div class="layout-left">LEFT</div>
+			<div class="layout-right">
+				<div class="layout-right-wrap">
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+				</div>
+			</div>
+		</div>
+		<div class="layout-bottom">BOTTOM</div>
+
+	</div>
+
+
+</body>
+</html>

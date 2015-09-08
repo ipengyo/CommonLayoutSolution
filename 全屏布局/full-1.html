@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全屏布局</title>
+	<style type="text/css">
+		html,body,.layout-fullScreen{
+			margin:0px;
+			overflow:hidden;
+			height:100%;
+		}
+		.layout-top{
+			position: absolute;
+			top:0px;
+			left:0px;
+			right:0px;
+			width:0px;
+			width:100%;
+			height:100px;
+			background:#FC7F7F;
+		}
+		.layout-bottom{
+			position:absolute;
+			bottom:0px;
+			right:0px;
+			left:0px;
+			width:100%;
+			height:50px;
+			background-color:#A7A1A1;
+		}
+		.layout-left{
+			position:absolute;
+			left:0px;
+			top:100px;
+			bottom:50px;
+			width:150px;
+			background-color:#DE86FF;
+		}
+		.layout-right{
+			overflow:auto;
+			position:absolute;
+			top:100px;
+			left:150px;
+			right:0px;
+			bottom:50px;
+			background-color:#905D5D;
+		}
+		.layout-right .layout-right-wrap{
+			width:100%;
+			min-height:1000px;
+		}
+
+	
+
+		/*NOTE:例如管理系统，监控与统计平台均广泛的使用全屏布局。*/
+
+	</style>
+</head>
+<body>
+	<div class="layout-fullScreen">
+		<div class="layout-top">
+			TOP
+		</div>
+		<div class="layout-center">
+			<div class="layout-left">LEFT</div>
+			<div class="layout-right">
+				<div class="layout-right-wrap">
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+					<p>asdfasdfasdfsad</p>
+				</div>
+			</div>
+		</div>
+		<div class="layout-bottom">BOTTOM</div>
+
+	</div>
+
+
+</body>
+</html>
